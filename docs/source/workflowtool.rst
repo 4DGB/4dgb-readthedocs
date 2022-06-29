@@ -1,4 +1,4 @@
-4DGBWorkflow tool
+4DGBWorkflowtool
 ===
 
 .. autosummary::

@@ -12,5 +12,5 @@ Contents
 
 .. toctree::
 
-   4dgbworkflowtool 
+   4DGBworkflow tool <workflowtool>
    api
