@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = '4DGBworkflow'
+project = '4DGB'
 copyright = '2021, Graziella'
 author = 'Graziella'
 

@@ -1,7 +1,7 @@
-4DGBWorkflowtool
+workflowtool
 ===
 
 .. autosummary::
    :toctree: generated
 
-   lumache
+   4DGB
