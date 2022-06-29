@@ -1,5 +1,5 @@
 workflowtool
-=====
+============
 
 .. _installation:
 
