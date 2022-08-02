@@ -9,9 +9,9 @@ Overview
 The `4DGBWorkflow` tool is a python script that manages a Docker executable. 
 In order to use the tool, you must have:
 
-1. Docker installed.
-   a. Here are (instructions for installing Docker)[https://docs.docker.com/engine/install/]
-2. `python` v3.x installed.
+- Docker installed.
+    - Here are (instructions for installing Docker)[https://docs.docker.com/engine/install/]
+- `python` v3.x installed.
 
 
 Installation
