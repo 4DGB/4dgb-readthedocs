@@ -1,5 +1,5 @@
-workflowtool
-============
+4DGBWworkflow tool
+==================
 
 .. _installation:
 
