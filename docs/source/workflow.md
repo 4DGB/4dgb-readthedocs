@@ -1,7 +1,5 @@
 # 4DGBWworkflow tool
 
-.. _installation:
-
 ## Overview of the tool
 
 The `4DGBWorkflow` tool is a python script that manages a Docker executable. 
