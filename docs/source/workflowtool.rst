@@ -6,7 +6,7 @@ workflowtool
 Installation
 ------------
 
-To use the workflow, first download the startup script to an area where you would like to work: 
+To use the workflow, first install the workflow script using pip: 
 
 .. code-block:: console
 
