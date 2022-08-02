@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
-=======================================
+This is a repository for 4DGB information
+=========================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+The main repository is here:
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+    github.com/4DGB
