@@ -10,5 +10,5 @@ To use the workflow, first download the startup script to an area where you woul
 
 .. code-block:: console
 
-   (.venv) $ pip install 4dgb-workflow
+    pip install 4dgb-workflow
 
