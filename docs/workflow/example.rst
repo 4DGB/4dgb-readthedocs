@@ -9,7 +9,8 @@ Example: starting with a template
    workflow.
 
 
-To get started, you can create a template project with the following command:
+Once you have the `4dgbworkflow` tool installed, you can create a 
+template project with the following command:
 
 .. code-block:: console
 
