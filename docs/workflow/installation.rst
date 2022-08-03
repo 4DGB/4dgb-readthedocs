@@ -66,4 +66,6 @@ that looks in the shell:
     13d42f965c06: Waiting
     ...
 
-Once the docker image is updated, the command will continue.
+Once the docker image is updated, the command will continue. From time to 
+time when the command is run, this update may occur. There are command
+line options to control this behavior (see above).
