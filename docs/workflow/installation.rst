@@ -9,7 +9,7 @@ The workflow tool is a python script, and is installed using pip:
 
 
 This will install a python module, and the ``4dgbworkflow`` script. This is the 
-command that you will use when invoking the workflow in a shwll. The help for the 
+command that you will use when invoking the workflow in a shell. The help for the 
 tool shows options and subcommands:
 
 .. code-block:: console
