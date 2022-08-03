@@ -44,7 +44,26 @@ When you run the tool, it will download the Docker image it needs from
 run the tool, you will see the download happening in the shell. This is how
 that looks in the shell:
 
-.. figure:: img/docker_pull.png
+.. code-block:: console
 
+    $ 4dgbworkflow run 4DGB_Project
+    Unable to find image '4dgb/4dgbworkflow-tool:latest' locally
+    latest: Pulling from 4dgb/4dgbworkflow-tool
+    e756f3fdd6a3: Download complete
+    bf168a674899: Download complete
+    e604223835cc: Download complete
+    6d5c91c4cd86: Download complete
+    2cc8d8854262: Downloading [================>                                  ]  64.87MB/196.7MB
+    2767dbfeeb87: Waiting
+    e5f27d860d89: Waiting
+    98a3e4f5f5ed: Waiting
+    5f15c8bc4073: Waiting
+    0436b31f5880: Waiting
+    63caf3fa19f8: Waiting
+    ff36ae1449c0: Waiting
+    5811ba7542b9: Waiting
+    8a76051ce885: Waiting
+    13d42f965c06: Waiting
+    ...
 
 Once the docker image is updated, the command will continue.
