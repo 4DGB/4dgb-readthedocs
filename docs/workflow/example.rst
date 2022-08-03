@@ -42,7 +42,7 @@ of the workflow computes a 3D structure for each input data structure, and this
 may take some time, depending upon the resolution of the input data, and the
 complexity of that data.
 
-.. code-block:: console
+.. code-block:: 
 
    $ 4dgbwqorkflow run 4DGB_Project
    > Workflow version: v0.4.5
@@ -66,7 +66,7 @@ how to connect to the 4D Genome Browser server:
         #
         # Ready!
         # Open your web browser and visit:
-        # http://localhost:8000/compare.html?gtkproject=newproject
+        # http://localhost:8000/compare.html?gtkproject=4DGB_Project
         #
         # Press [Ctrl-C] to exit
         #
