@@ -40,3 +40,25 @@ complexity of that data.
    [>]: Building project... (this may take a while)
      [! ENCLB571GEP.chr22.200kb.h5.hic]: Processing Hi-C file...
      [! ENCLB870JCZ.chr22.200kb.12.h5.hic]: Processing Hi-C file...
+
+When the workflow finishes, it will print information to the shell about
+how to connect to the 4D Genome Browser server:
+
+.. code-block:: console
+
+   $ 4dgbwqorkflow run 4DGB_Project
+   > Workflow version: v0.4.5
+   > Browser version: v1.4.3
+   [>]: Building project... (this may take a while)
+     [! ENCLB571GEP.chr22.200kb.h5.hic]: Processing Hi-C file...
+     [! ENCLB870JCZ.chr22.200kb.12.h5.hic]: Processing Hi-C file...
+
+        #
+        # Ready!
+        # Open your web browser and visit:
+        # http://localhost:8000/compare.html?gtkproject=newproject
+        #
+        # Press [Ctrl-C] to exit
+        #
+
+Paste the URL into a browser, and you will see the final tool running:

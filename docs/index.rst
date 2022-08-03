@@ -19,3 +19,4 @@ Welcome to 4DGB's documentation!
    workflow/start
    workflow/installation
    workflow/example
+   workflow/copy
