@@ -2,7 +2,12 @@ Example of using the tool
 =========================
 
 .. figure:: img/browser.png
-   :class: with-border
+
+   Screen capture of the 4D Genome Browser running on the template
+   project created by the tool. The template project can be copied
+   and edited by a user to easily create a custom version of the
+   workflow.
+
 
 To get started, you can create a template project with the following command:
 
