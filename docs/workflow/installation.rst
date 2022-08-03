@@ -1,14 +1,5 @@
-Getting Started
-===============
-
-The 4DGB workflow is a python script that manages a Docker image, so both
-python and Docker must be installed.
-
-* `Docker instructions <https://docs.docker.com/desktop/>`_
-* python v3.x
-
-Installing the 4dgb-workflow tool
----------------------------------
+Installing the 4dgbworkflow tool
+================================
 
 The workflow tool is a python script, and is installed using pip:
 
@@ -17,8 +8,9 @@ The workflow tool is a python script, and is installed using pip:
    $ pip install 4dgb-workflow
 
 
-This will install a python module, and the ``4dgbworkflow`` script. This is the shell
-command that you will use for the workflow. The help for the tool shows:
+This will install a python module, and the ``4dgbworkflow`` script. This is the 
+command that you will use when invoking the workflow in a shwll. The help for the 
+tool shows options and subcommands:
 
 .. code-block:: console
 
@@ -43,3 +35,5 @@ command that you will use for the workflow. The help for the tool shows:
      --container CONTAINER
      -t TAG, --tag TAG     Version tag for the container to use. (Default:
                            'latest')
+
+

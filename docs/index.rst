@@ -8,6 +8,14 @@ Welcome to 4DGB's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :Caption: The 4D Genome Browser
 
-   start
+   browser/start
+
+.. toctree::
+   :maxdepth: 2
+   :Caption: The 4D Genome Browser Workflow Tool
+
+   workflow/start
+   workflow/installation
+   workflow/example
