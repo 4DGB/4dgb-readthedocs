@@ -14,6 +14,8 @@ tool shows options and subcommands:
 
 .. code-block:: console
 
+   $ 4dgbworkflow --help
+
    usage: 4DGBWorkflow [-h] [-n] [--docker PATH] [--container CONTAINER] [-t TAG]
                        {run,update,template,version} ...
 
