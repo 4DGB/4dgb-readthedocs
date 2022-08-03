@@ -39,3 +39,11 @@ tool shows options and subcommands:
                            'latest')
 
 
+After you have the tool installed, it will download the Docker image it needs from
+``hub.docker.com``. Thus, the first time you run the tool, you will see the download
+happening in the shell. This is how that looks in the shell:
+
+.. figure:: img/docker_pull.png
+
+
+Once the docker image is updated, the command will continue.
