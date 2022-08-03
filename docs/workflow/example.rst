@@ -2,6 +2,7 @@ Example of using the tool
 =========================
 
 .. figure:: img/browser.png
+   :class: with-border
 
 To get started, you can create a template project with the following command:
 
