@@ -10,6 +10,4 @@ Welcome to 4DGB's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
-
-* :ref:`start`
+   start
