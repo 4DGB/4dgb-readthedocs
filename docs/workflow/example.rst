@@ -3,7 +3,7 @@ Example of using the tool
 
 .. code-block:: console
 
-   $ pip 4dgbworkflow template
+   $ 4dgbworkflow template
 
 This will create a template project directory, called ``4DGB_Project``. Listing
 the directory shows the files that have been created:
