@@ -1,5 +1,5 @@
-Example of copying an existing project
-======================================
+Example: copying an existing project
+====================================
 
 You can make a copy of an existing project and edit files
 in that new project directory to create a different project.

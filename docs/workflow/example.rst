@@ -1,5 +1,5 @@
-Example of using the tool
-=========================
+Example: starting with a template 
+=================================
 
 .. figure:: img/browser.png
 
