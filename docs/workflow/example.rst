@@ -1,6 +1,10 @@
 Example of using the tool
 =========================
 
+.. figure:: img/browser.png
+
+To get started, you can create a template project with the following command:
+
 .. code-block:: console
 
    $ 4dgbworkflow template
@@ -63,4 +67,3 @@ how to connect to the 4D Genome Browser server:
 
 Paste the URL into a browser, and you will see the final tool running:
 
-.. figure:: img/browser.png
