@@ -4,7 +4,7 @@ Getting Started
 .. figure:: img/workflow_diagram.png
 
    The 4dgbworkflow is a workflow that takes user input data
-   and manages a 4D Genome Browser instance for that data.
+   and creates a 4D dataset and a 4D Genome Browser for that data. 
 
 The 4DGB workflow is a python script that manages a complex workflow of
 steps that take a user's input data and transforms that data into an
