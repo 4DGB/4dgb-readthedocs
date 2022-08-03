@@ -15,6 +15,6 @@ Welcome to 4DGB's documentation!
 Indices and tables
 ==================
 
-* :ref:`genindex`
+* :ref:`installation`
 * :ref:`modindex`
 * :ref:`search`
