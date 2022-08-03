@@ -53,7 +53,7 @@ that looks in the shell:
     bf168a674899: Download complete
     e604223835cc: Download complete
     6d5c91c4cd86: Download complete
-    2cc8d8854262: Downloading [================>                                  ]  64.87MB/196.7MB
+    2cc8d8854262: Downloading [================>                             ]  64.87MB/196.7MB
     2767dbfeeb87: Waiting
     e5f27d860d89: Waiting
     98a3e4f5f5ed: Waiting
