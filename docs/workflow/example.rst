@@ -71,5 +71,5 @@ how to connect to the 4D Genome Browser server:
         # Press [Ctrl-C] to exit
         #
 
-Paste the URL into a browser, and you will see the final tool running:
+Paste the URL into a browser, and you will see the final tool running (see figure at the top of this page).
 
