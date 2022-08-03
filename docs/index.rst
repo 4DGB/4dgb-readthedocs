@@ -12,9 +12,4 @@ Welcome to 4DGB's documentation!
 
 
 
-Indices and tables
-==================
-
-* :ref:`installation`
-* :ref:`modindex`
-* :ref:`search`
+* :ref:`start`
