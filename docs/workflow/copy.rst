@@ -35,3 +35,8 @@ immediately run the **4DGB Server**, as all the work has already been done:
         #
         # Press [Ctrl-C] to exit
         #
+
+**NOTE**: The file-based nature of the results means that once you have run the
+tool, you can bundle up the project directory and send it to a colleague who
+has the tool installed and they can instantly run it, without the delay of
+running the workflow.
