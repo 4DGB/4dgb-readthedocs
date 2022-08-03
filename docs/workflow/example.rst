@@ -72,5 +72,21 @@ how to connect to the 4D Genome Browser server:
         # Press [Ctrl-C] to exit
         #
 
-Paste the URL into a browser, and you will see the final tool running (see figure at the top of this page).
+Paste the URL into a browser, and you will see the final tool running (see
+figure at the top of this page).
 
+When the workflow has completed, you will see a `.build` directory inside the
+project directory. This is the cache directory where the workflow stores
+intermediate data products and other build information. If you remove this
+directory, it will force the workflow to run again.
+
+.. code-block:: console
+
+   workingdir/
+        4DGB_Project/
+            .build/
+            ENCLB571GEP.chr22.200kb.h5.hic
+            ENCLB870JCZ.chr22.200kb.12.h5.hic
+            chr22.tracks.12.csv
+            chr22.tracks.csv
+            project.yaml
