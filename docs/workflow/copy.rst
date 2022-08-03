@@ -30,8 +30,6 @@ done:
    > Workflow version: v0.4.5
    > Browser version: v1.4.3
    [>]: Building project... (this may take a while)
-     [! ENCLB571GEP.chr22.200kb.h5.hic]: Processing Hi-C file...
-     [! ENCLB870JCZ.chr22.200kb.12.h5.hic]: Processing Hi-C file...
 
         #
         # Ready!
