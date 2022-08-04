@@ -45,7 +45,7 @@ has the tool installed and they can instantly run it, without the delay of
 running the workflow.
 
 For UNIX-like systems, the tar command can be used to package results,
-like this:
+like this, for a project named ``myproject``:
 
 .. code-block:: console
 
