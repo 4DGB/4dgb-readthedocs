@@ -1,17 +1,17 @@
 Example: copying an existing project
 ====================================
 
-Since a `4dgbworkflow` directory is just a collection of files, you can use
-normal file commands from the shell to make a copy of an existing project and
-edit files in that new project directory to create a different project.
+Since a ``4dgbworkflow`` project directory is just a collection of files, you
+can use normal file commands from the shell to make a copy of an existing
+project and edit files in that new project directory to create a different
+project.
 
-For example, after running the ``4DGB_Project``, copying that data will result
-in a project that is already complete, and will not need to run again, because
-all of the work has already been done.
+For example, after running the tool on the example ``4DGB_Project``, copying
+that directory will result in a copy of that project that is already complete.
 
-**Important**: to copy the project and preserve the work already done on the
-project (so you may not have to re-run the simulations), it is important to use
-the ``-a`` command line argument to ``cp``, as in the example below:
+**Important**: it is important to use the ``-a`` command line argument to
+``cp``, as in the example below, in order to preserve all file metadata. The
+example below shows how this is done in the shell:
 
 .. code-block:: console
 
