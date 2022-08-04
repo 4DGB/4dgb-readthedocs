@@ -11,11 +11,11 @@ all of the work has already been done.
 
 **Important**: to copy the project and preserve the work already done on the
 project (so you may not have to re-run the simulations), it is important to use
-the ``-af`` command line arguments to ``cp``, as in the example below:
+the ``-a`` command line argument to ``cp``, as in the example below:
 
 .. code-block:: console
 
-   $ cp -af 4DGB_Project myproject 
+   $ cp -a 4DGB_Project myproject 
    $ 4dgbworkflow run myproject
 
 After the directory is copied, running the tool on the new project will
@@ -36,7 +36,17 @@ immediately run the **4DGB Server**, as all the work has already been done:
         # Press [Ctrl-C] to exit
         #
 
-**NOTE**: The file-based nature of the results means that once you have run the
+Sharing Results
+---------------
+
+The file-based nature of the results means that once you have run the
 tool, you can bundle up the project directory and send it to a colleague who
 has the tool installed and they can instantly run it, without the delay of
 running the workflow.
+
+For UNIX-like systems, the tar command can be used to package results,
+like this:
+
+.. code-block:: console
+
+   $ tar -czvf myproject.tar.gz myproject
