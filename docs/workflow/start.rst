@@ -15,7 +15,7 @@ the tools can be run on all operating systems, as long as Docker is present.
 
 To get started, both ``python`` and ``Docker`` must be installed.
 
-* `Docker instructions <https://docs.docker.com/desktop/>`_ * python v3.x can
-  be installed in many ways, and is likely already part of your system's
-  software.
+* `Docker instructions <https://docs.docker.com/desktop/>`_ 
+*  python v3.x can be installed in many ways, and is likely already 
+   part of your system's software.
 
