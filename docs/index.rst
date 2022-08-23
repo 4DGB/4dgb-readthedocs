@@ -20,3 +20,4 @@
    workflow/installation
    workflow/example
    workflow/copy
+   workflow/editing
