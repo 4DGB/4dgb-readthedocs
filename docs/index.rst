@@ -18,6 +18,7 @@
 
    workflow/start
    workflow/installation
+   workflow/minimalexample
    workflow/example
    workflow/copy
    workflow/editing

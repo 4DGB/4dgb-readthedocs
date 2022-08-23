@@ -49,7 +49,8 @@ Project section
 This section contains parameters that can be tuned to control the behavior
 of the workflow.
 
-- **name**: a descriptive string <<details>> 
+- **name**: a descriptive string for the project that is only used in this 
+  file. Can be used to retain any information the user would like 
 - **chromosome**: the chromosome to be viewed. This is expected to be present
   in the ``.hic`` data files provided in the ``datasets`` section.
 - **interval**: the length of genetic material that is represented by each
@@ -63,17 +64,20 @@ of the workflow.
 
    (num.\ pairs\ in\ project\ chromosome)/project\ interval
 
-- **count_threshold**: <detail here>
-- **bond_coeff**: FENE bond coefficient used in the ``LAMMPS`` simulation.
-  If the ``LAMMPS`` run fails with a "bad FENE bond" error, try increasing
-  this value.
+- **count_threshold**: Parameter used for ``LAMMPS``. A threshold used in 
+  computing values for input to the ``LAMMPS`` simulation. (Cullen: details) 
+- **bond_coeff**: Parameter used for ``LAMMPS``. FENE bond coefficient used 
+  in the ``LAMMPS`` simulation. If the ``LAMMPS`` run fails with a 
+  "bad FENE bond" error, try increasing this value.
 - **blackout**: A list of *bead* ID numbers that can be hidden in the 
   final visualization. These are determined by the user, but generally
   are used to hide long 'tails' of material that do not coalesce in the 
   final 3D structure due to a variety of factors.
 
-Track Section
--------------
+**NOTE** bead IDs start at 1. This needs to be spelled out somewhere.
+
+Datasets Section
+----------------
 
 This defines track data that can be painted on the final 3D structure.
 The final visualization will show a comparative visualization between
@@ -87,7 +91,7 @@ the first (left window) and second (right window) datasets in the list.
         - name: "some name"
           data: "some file relative to the project directory"
 
-- **name**: a descriptive name for the dataset, used in the final
-  visualization
-- **data**: a ``.hic`` file that is contained in the project directory
-    project:
+- **name**: a descriptive name for the dataset. Appears as a title for
+  the 3D structure view in the browser. 
+- **data**: ``.hic`` file for a dataset. This must be contained in the 
+  project directory.
