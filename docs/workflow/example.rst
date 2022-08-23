@@ -10,7 +10,9 @@ Example: starting with a template
 
 
 Once you have the `4dgbworkflow` tool installed, you can create a 
-template project with the following command:
+template project with the following command (optionally, you can use the
+``--output`` command line argument to define a name for the resulting
+template directory):
 
 .. code-block:: console
 
