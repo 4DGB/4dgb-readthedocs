@@ -1,5 +1,5 @@
-Example: starting with a template 
-=================================
+Example: Minimal Example 
+========================
 
 The simplest way to start from scratch is with a minimal example
 which defines the minimum input data needed to run the workflow.
