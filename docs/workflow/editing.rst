@@ -49,7 +49,7 @@ Project section
 This section contains parameters that can be tuned to control the behavior
 of the workflow.
 
-- **name**: can be any string
+- **name**: a descriptive string <<details>> 
 - **chromosome**: the chromosome to be viewed. This is expected to be present
   in the ``.hic`` data files provided in the ``datasets`` section.
 - **interval**: the length of genetic material that is represented by each
