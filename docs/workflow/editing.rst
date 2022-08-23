@@ -27,4 +27,20 @@ information about the workflow.
   to select regions in the 4D Genome Browser. Either ``.gff`` or ``.csv``
   files can be used.
 
-The workflow expects the data to be present
+The workflow expects the data files defined in the ``project.yaml`` file to
+exist, be well-formed, and contain data that can be cross-referenced per
+the expectations of the tools.
+
+Project section
+---------------
+
+.. code-block:: console
+    project:
+        name:
+        chromosome:
+        interval:
+        count_threshold:
+        bond_coeff:
+        blackout:
+       
+
