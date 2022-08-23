@@ -55,9 +55,9 @@ of the workflow.
 - **interval**: the length of genetic material that is represented by each
   *bead* that is passed to the ``LAMMPS`` simulation, and which is shown in 
   the final visualization. The default value of 200,000 means that the
-  input ``.hic`` data will be sampled at a 200KB resolution. The number of 
-  *beads* that are passed to the ``LAMMPS`` simulation, and that will
-  be represented in the 3D structure and visualization is:
+  input ``.hic`` data will be sampled at a 200KB resolution, and the number of 
+  *beads* passed to the ``LAMMPS`` simulation (and represented in the 3D 
+  structure and visualization) is:
 
 .. math::
 
