@@ -35,6 +35,7 @@ Project section
 ---------------
 
 .. code-block:: console
+
     project:
         name:
         chromosome:
