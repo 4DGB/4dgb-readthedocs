@@ -53,10 +53,11 @@ of the workflow.
 - **chromosome**: the chromosome to be viewed. This is expected to be present
   in the ``.hic`` data files provided in the ``datasets`` section.
 - **interval**: the length of genetic material that is represented by each
-  *bead* that is passed to the MD simulation, and which is shown in 
+  *bead* that is passed to the ``LAMMPS`` simulation, and which is shown in 
   the final visualization. The default value of 200,000 means that the
   input ``.hic`` data will be sampled at a 200KB resolution. The number of 
-  *beads* that are passed to the ``LAMMPS`` simulation will be 
+  *beads* that are passed to the ``LAMMPS`` simulation, and that will
+  be represented in the 3D structure and visualization is:
 
 .. math::
 
