@@ -67,3 +67,23 @@ of the workflow.
   final visualization. These are determined by the user, but generally
   are used to hide long 'tails' of material that do not coalesce in the 
   final 3D structure due to a variety of factors.
+
+Track Section
+-------------
+
+This defines track data that can be painted on the final 3D structure.
+The final visualization will show a comparative visualization between
+the first (left window) and second (right window) datasets in the list.
+
+.. code-block:: console
+
+   datasets:
+        - name: "some name"
+          data: "some file relative to the project directory"
+        - name: "some name"
+          data: "some file relative to the project directory"
+
+- **name**: a descriptive name for the dataset, used in the final
+  visualization
+- **data**: a ``.hic`` file that is contained in the project directory
+    project:
