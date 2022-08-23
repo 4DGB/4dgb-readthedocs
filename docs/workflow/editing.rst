@@ -60,7 +60,7 @@ of the workflow.
 
 .. math::
 
-   (num. pairs in project::chromosome)/project::interval
+   (num.\ pairs\ in\ project\ chromosome)/project\ interval
 
 - **count_threshold**: <detail here>
 - **bond_coeff**: FENE bond coefficient used in the ``LAMMPS`` simulation.
