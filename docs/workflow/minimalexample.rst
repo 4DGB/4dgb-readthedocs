@@ -10,12 +10,15 @@ You can create this by hand. First, make a well-named project directory
 that will hold all of our data and results:
 
 .. code-block::
+
     mkdir chr22_example
 
-Now, copy two related ``hic`` files into that directory, and it 
-will look something like this:
+Now, copy two related ``hic`` files into that directory. These files
+must have data available for the *chromosome* and *resolution* that you
+want to view. Your directory should look something like this:
 
 .. code-block::
+
     chr22_example/
         ENCLB571GEP.hic
         ENCLB870JCZ.hic
