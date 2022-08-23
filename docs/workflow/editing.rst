@@ -37,11 +37,33 @@ Project section
 .. code-block:: console
 
     project:
-        name:
-        chromosome:
-        interval:
-        count_threshold:
-        bond_coeff:
+        name:               "your project name"
+        chromosome:         "chr22"
+        interval:           200000
+        count_threshold:    2.0
+        bond_coeff:         55
         blackout:
+            - [1, 85]
        
 
+This section contains parameters that can be tuned to control the behavior
+of the workflow.
+
+- **name**: can be any string
+- **chromosome**: the chromosome to be viewed. This is expected to be present
+  in the ``.hic`` data files provided in the ``datasets`` section.
+- **interval**: the length of genetic material that is represented by each
+  *bead* that is passed to the MD simulation, and which is shown in 
+  the final visualization. The default value of 200,000 means that the
+  input ``.hic`` data will be sampled at a 200KB resolution. The number of 
+  *beads* that are passed to the ``LAMMPS`` simulation will be 
+  ``[number of pairs in project:chromosome]/project:interval``
+  segments
+- **count_threshold**: <detail here>
+- **bond_coeff**: FENE bond coefficient used in the ``LAMMPS`` simulation.
+  If the ``LAMMPS`` run fails with a "bad FENE bond" error, try increasing
+  this value.
+- **blackout**: A list of *bead* ID numbers that can be hidden in the 
+  final visualization. These are determined by the user, but generally
+  are used to hide long 'tails' of material that do not coalesce in the 
+  final 3D structure due to a variety of factors.
