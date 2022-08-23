@@ -57,8 +57,10 @@ of the workflow.
   the final visualization. The default value of 200,000 means that the
   input ``.hic`` data will be sampled at a 200KB resolution. The number of 
   *beads* that are passed to the ``LAMMPS`` simulation will be 
-  ``[number of pairs in project:chromosome]/project:interval``
-  segments
+.. math::
+
+    \frac{num. pairs in projecgt::chromosome}{project::interval}
+
 - **count_threshold**: <detail here>
 - **bond_coeff**: FENE bond coefficient used in the ``LAMMPS`` simulation.
   If the ``LAMMPS`` run fails with a "bad FENE bond" error, try increasing
