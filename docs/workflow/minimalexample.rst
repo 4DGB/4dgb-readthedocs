@@ -1,14 +1,14 @@
 Example: minimum to get started 
 ===============================
 
-The simplest way to start your own project is to start with the minimum
-information required. The template project has examples to help you
-get started with this.
+The simplest way to start your own project is to start with a template and
+provide the minimum information required. The template project has examples to
+help you get started with this.
 
-To get started, we need just a few things: 
+Big picture: to get started, we need just a few things: 
 
 - Two related ``hic`` files you want to compare. We call these **datasets**
-- The **chromosome** you'd like to view. This must be present in the datasets.
+- The name of the **chromosome** you'd like to view. This must be present in the datasets.
 - The **resolution** you'd like to view. This must be present in the datasets.
   By default, the workflow uses a value of 200kb, so if that's the resolution
   you'd like to use, you can omit this value.
