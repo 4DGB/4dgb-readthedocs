@@ -8,8 +8,8 @@ This requires just a few pieces of information and two files:
 - Two related ``hic`` files you want to compare. We call these **datasets**
 - The **chromosome** you'd like to view. This must be present in the datasets.
 - The **resolution** you'd like to view. This must be present in the datasets.
-  If this is defined, the workflow uses a default value of 200kb, so for
-  simplicity you can omit it.
+  By default, the workflow uses a value of 200kb, so if that's the resolution
+  you'd like to use, you can omit this value.
 
 You can create this example by hand. First, make a well-named project directory
 that will hold all of our data and results:
