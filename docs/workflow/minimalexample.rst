@@ -5,9 +5,9 @@ The simplest way to start from scratch is with a minimal example
 which defines the minimum input data needed to run the workflow.
 This requires just a few pieces of information and two files:
 
-- two related ``hic`` files you want to compare. We call these *datasets*
-- the *chromosome* you'd like to view. This must be present in the datasets.
-- the *resolution* you'd like to view. This must be present in the datasets.
+- Two related ``hic`` files you want to compare. We call these **datasets**
+- The **chromosome** you'd like to view. This must be present in the datasets.
+- The **resolution** you'd like to view. This must be present in the datasets.
   If this is defined, the workflow uses a default value of 200kb, so for
   simplicity you can omit it.
 
