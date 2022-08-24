@@ -1,5 +1,5 @@
-Example: minimum to get started 
-===============================
+Getting started with your own data
+==================================
 
 The simplest way to start your own project is to start with a template and
 provide the minimum information required. The template project has examples to

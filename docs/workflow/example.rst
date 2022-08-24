@@ -1,5 +1,5 @@
-Example: starting with a template 
-=================================
+Running an example project
+==========================
 
 .. figure:: img/browser.png
 
