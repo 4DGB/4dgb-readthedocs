@@ -21,4 +21,5 @@
    workflow/example
    workflow/minimalexample
    workflow/project
+   workflow/files
    workflow/copy
