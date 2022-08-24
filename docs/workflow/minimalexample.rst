@@ -50,7 +50,7 @@ After the simulation has run, it's useful to add more information, such as
 tracks, annotations and other parameters. Adding this information and
 re-running the workflow will **not** cause it to re-run the simulation.
 Instead, it adds the information to the rest of the workflow, so that the new
-data can be viewed in the browser.
+data can be viewed in the browser almost immediately.
 
 To see this in our example, replace the ``project.yaml`` file with a minimal
 project file containing track data, ``project.min-with-tracks.yaml``, which 
