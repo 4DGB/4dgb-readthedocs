@@ -1,14 +1,5 @@
-Editing a template with your data
-=================================
-
-After you've created a template using the ``4dgbworkflow`` tool, you 
-can edit that template to create a project using your own data.
-
-In general, the workflow takes in common genomics data formats 
-(``.hic, .gff, etc.``), and well defined ``.csv`` files to produce
-a 4D dataset. The workflow expects that the user wants to compare
-results from two states (timesteps in a series, or modifications of
-a sequence), so two sets of data are required.
+The Project.yaml file
+=====================
 
 The ``project.yaml`` file has several sections, defining needed by the
 workflow. The file includes comments that can be referred to for detailed
