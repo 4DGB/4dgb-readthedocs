@@ -105,11 +105,11 @@ This defines track data that can be painted on the final 3D structure.
               file: (optional) filename.csv
 
 - **tracks**: a list of values defining track data for the datasets
-  - **name**: a descriptive name for the dataset. This will appear
-    in the pulldown menu to select a track in the browser.
-  - **file**: a csv file in the project directory. This is the default
-    file that is searched for the columns below, unless the value is
-    overridden by another file value.
-  - **columns**: a list of values defining the files for the datasets
-    - **name**: a string that is the name of a column in the source csv file.
-    - **file (optional)**: the csv file to search for the name of this column.
+    - **name**: a descriptive name for the dataset. This will appear
+      in the pulldown menu to select a track in the browser.
+    - **file**: a csv file in the project directory. This is the default
+      file that is searched for the columns below, unless the value is
+      overridden by another file value.
+    - **columns**: a list of values defining the files for the datasets
+        - **name**: a string that is the name of a column in the source csv file.
+        - **file (optional)**: the csv file to search for the name of this column.
