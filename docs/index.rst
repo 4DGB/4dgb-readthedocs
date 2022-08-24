@@ -14,7 +14,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :Caption: The 4D Genome Browser Workflow Tool, v1.1.0
+   :Caption: The 4DGB Workflow Tool
 
    workflow/start
    workflow/installation
