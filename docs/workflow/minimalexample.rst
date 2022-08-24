@@ -57,8 +57,8 @@ and re-running the workflow will **not** cause it to re-run the simulation.
 Instead, it adds the information to the rest of the workflow, so that
 the new data can be viewed in the browser.
 
-For example, to add a track to the project, you can add the following 
-to the ``project.yaml``.
+For example, to add a track to the project, you can add information like
+the following to the ``project.yaml``, to define a data track named "ATAC".
 
 .. code-block::
 
@@ -68,5 +68,4 @@ to the ``project.yaml``.
         columns:
           - name: ATAC
           - name: ATAC
-            file: chr22.tracks.12.csv
 
