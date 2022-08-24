@@ -36,7 +36,8 @@ workflow needs to get started. Note that we don't need to define the
         - name: "12 Hours"
           data: ENCLB870JCZ.chr22.200kb.12hr.hic
 
-Run the tool, and wait for completion to look at your data:
+Run the tool, and when it's done, view the data using the URL printed to the
+shell:
 
 .. code-block::
     
