@@ -1,5 +1,5 @@
-Example: Minimal Example 
-========================
+Example: minimum to get started 
+===============================
 
 The simplest way to start from scratch is with a minimal example
 which defines the minimum input data needed to run the workflow.
@@ -18,7 +18,7 @@ that will hold all of our data and results:
 
     mkdir chr22_datasets
 
-Now, copy two related ``hic`` files into that directory. These files
+Copy two related ``hic`` files into that directory. These files
 must have data available for the **chromosome** and **resolution** that you
 want to view. Your directory should look something like this:
 
@@ -28,7 +28,7 @@ want to view. Your directory should look something like this:
         ENCLB571GEP.hic
         ENCLB870JCZ.hic
 
-Now create a minimal ``project.yaml`` file inside the project
+Create a minimal ``project.yaml`` file inside the project
 directory that looks something like this:
 
 .. code-block::
@@ -42,7 +42,7 @@ directory that looks something like this:
         - name: "12 Hours"
           data: ENCLB870JCZ.hic
 
-Now run the tool, and wait for completion to look at your data:
+Run the tool, and wait for completion to look at your data:
 
 .. code-block::
     
@@ -51,10 +51,14 @@ Now run the tool, and wait for completion to look at your data:
 Progressively Adding Information
 --------------------------------
 
-Once the simulation has run, you can view the datasets. Then you can 
-progressively add more data, run the workflow, and that will be added
-without re-running the simulation. For example, to add a track to the
-project, you can add the following to the ``project.yaml``.
+After the simulation has run, it's useful to add more information, 
+such as tracks, annotations and other parameters. Adding this information
+and re-running the workflow will **not** cause it to re-run the simulation.
+Instead, it adds the information to the rest of the workflow, so that
+the new data can be viewed in the browser.
+
+For example, to add a track to the project, you can add the following 
+to the ``project.yaml``.
 
 .. code-block::
 
