@@ -70,11 +70,11 @@ of the workflow.
 Datasets Section
 ----------------
 
-This defines track data that can be painted on the final 3D structure.
+This defines the datasets that are to be compared in the final browser.
 The final visualization will show a comparative visualization between
 the first (left window) and second (right window) datasets in the list.
 
-.. code-block:: console
+.. code-block::
 
    datasets:
         - name: "some name"
@@ -82,7 +82,32 @@ the first (left window) and second (right window) datasets in the list.
         - name: "some name"
           data: "some file relative to the project directory"
 
-- **name**: a descriptive name for the dataset. Appears as a title for
-  the 3D structure view in the browser. 
-- **data**: ``.hic`` file for a dataset. This must be contained in the 
-  project directory.
+- **datasets**: a list of values describing the two required datasets.
+    - **name**: a descriptive name for the dataset. Appears as a title for
+      the 3D structure view in the browser. 
+    - **data**: ``.hic`` file for a dataset. This must be contained in the 
+      project directory.
+
+Tracks Section
+--------------
+
+This defines track data that can be painted on the final 3D structure.
+
+.. code-block::
+
+    tracks:
+        - name: "name of the track" 
+          file: filename.csv 
+          columns:
+            - name: "name of the column" 
+            - name: "name of the column"
+
+- **tracks**: a list of values defining track data for the datasets
+  - **name**: a descriptive name for the dataset. This will appear
+    in the pulldown menu to select a track in the browser.
+  - **file**: a csv file in the project directory. This is the default
+    file that is searched for the columns below, unless the value is
+    overridden by another file value.
+  - **columns**: a list of values defining the files for the datasets
+    - **name**: a string that is the name of a column in the source csv file.
+    - **file (optional)**: the csv file to search for the name of this column.
