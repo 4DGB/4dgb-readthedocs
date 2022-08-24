@@ -34,17 +34,35 @@ directory that looks something like this:
 .. code-block::
 
     project:
-        chromosome: 'chr22'
+        chromosome: chr22
 
     datasets:
         - name: "0 Hours"
-          data: "ENCLB571GEP.hic"
+          data: ENCLB571GEP.hic
         - name: "12 Hours"
-          data: "ENCLB870JCZ.hic"
+          data: ENCLB870JCZ.hic
 
 Now run the tool, and wait for completion to look at your data:
 
 .. code-block::
     
     4dgbworkflow run chr22_datasets 
+
+Progressively Adding Information
+--------------------------------
+
+Once the simulation has run, you can view the datasets. Then you can 
+progressively add more data, run the workflow, and that will be added
+without re-running the simulation. For example, to add a track to the
+project, you can add the following to the ``project.yaml``.
+
+.. code-block::
+
+    tracks:
+      - name: ATAC
+        file: chr22.tracks.csv
+        columns:
+          - name: ATAC
+          - name: ATAC
+            file: chr22.tracks.12.csv
 
