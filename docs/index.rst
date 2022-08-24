@@ -20,5 +20,5 @@
    workflow/installation
    workflow/example
    workflow/minimalexample
+   workflow/project
    workflow/copy
-   workflow/editing
