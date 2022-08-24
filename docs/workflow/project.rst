@@ -100,7 +100,9 @@ This defines track data that can be painted on the final 3D structure.
           file: filename.csv 
           columns:
             - name: "name of the column" 
+              file: (optional) filename.csv
             - name: "name of the column"
+              file: (optional) filename.csv
 
 - **tracks**: a list of values defining track data for the datasets
   - **name**: a descriptive name for the dataset. This will appear
