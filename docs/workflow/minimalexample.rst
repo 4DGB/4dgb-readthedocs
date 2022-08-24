@@ -19,7 +19,7 @@ that will hold all of our data and results:
     mkdir chr22_datasets
 
 Now, copy two related ``hic`` files into that directory. These files
-must have data available for the *chromosome* and *resolution* that you
+must have data available for the **chromosome** and **resolution** that you
 want to view. Your directory should look something like this:
 
 .. code-block::
