@@ -1,9 +1,11 @@
 Example: minimum to get started 
 ===============================
 
-The simplest way to start from scratch is with a minimal example
-which defines the minimum input data needed to run the workflow.
-This requires just a few pieces of information and two files:
+The simplest way to start your own project is to start with the minimum
+information required. The template project has examples to help you
+get started with this.
+
+To get started, we need just a few things: 
 
 - Two related ``hic`` files you want to compare. We call these **datasets**
 - The **chromosome** you'd like to view. This must be present in the datasets.
@@ -11,25 +13,17 @@ This requires just a few pieces of information and two files:
   By default, the workflow uses a value of 200kb, so if that's the resolution
   you'd like to use, you can omit this value.
 
-You can create this example by hand. First, make a well-named project directory
-that will hold all of our data and results:
+To see this working, create a template project, and use the minimal ``project.yaml``
+file that's provided:
 
 .. code-block::
 
-    mkdir chr22_datasets
+   4dgbworkflow template --output minimal
+   cp minimal/project.min.yaml minimal/project.yaml
 
-Copy two related ``hic`` files into that directory. These files
-must have data available for the **chromosome** and **resolution** that you
-want to view. Your directory should look something like this:
-
-.. code-block::
-
-    chr22_datasets/
-        ENCLB571GEP.hic
-        ENCLB870JCZ.hic
-
-Create a minimal ``project.yaml`` file inside the project
-directory that looks something like this:
+The minimal ``project.yaml`` contains the minimum information that the workflow
+needs to get started. Note that we don't need to define the **resolution**, 
+because we are fine with the default value of 200kb:
 
 .. code-block::
 
@@ -38,15 +32,15 @@ directory that looks something like this:
 
     datasets:
         - name: "0 Hours"
-          data: ENCLB571GEP.hic
+          data: ENCLB571GEP.chr22.200kb.00hr.hic
         - name: "12 Hours"
-          data: ENCLB870JCZ.hic
+          data: ENCLB870JCZ.chr22.200kb.12hr.hic
 
 Run the tool, and wait for completion to look at your data:
 
 .. code-block::
     
-    4dgbworkflow run chr22_datasets 
+    4dgbworkflow run minimal
 
 Progressively Adding Information
 --------------------------------
@@ -57,15 +51,46 @@ and re-running the workflow will **not** cause it to re-run the simulation.
 Instead, it adds the information to the rest of the workflow, so that
 the new data can be viewed in the browser.
 
-For example, to add a track to the project, you can add information like
-the following to the ``project.yaml``, to define a data track named "ATAC".
+To see this in our example, copy the project.min-with-tracks.yaml file to
+the project.yaml file:
 
 .. code-block::
 
+   cp minimal/project.min-with-tracks.yaml minimal/project.yaml
+
+We now have two tracks defined for the data, using two ``csv`` files
+in the template directory:
+
+.. code-block::
+
+    project:
+      chromosome: chr22
+      blackout:
+        - [1, 85]
+
+    datasets:
+      - name: "0 Hours"
+        data: ENCLB571GEP.chr22.200kb.00hr.hic
+      - name: "12 Hours"
+        data: ENCLB870JCZ.chr22.200kb.12hr.hic
+
     tracks:
       - name: ATAC
-        file: chr22.tracks.csv
+        file: ENCLB571GEP.chr22.200kb.00hr.tracks.csv
         columns:
           - name: ATAC
           - name: ATAC
+            file: ENCLB870JCZ.chr22.200kb.12hr.tracks.csv
+      - name: H3K27ac
+        file: ENCLB571GEP.chr22.200kb.00hr.tracks.csv
+        columns:
+          - name: H3K27ac
+          - name: H3K27ac
+            file: ENCLB870JCZ.chr22.200kb.12hr.tracks.csv
 
+
+Running the workflow again will update the browser data to include these
+tracks, which can be selected using the controls at the left of the browser.
+
+**NOTE** you will have to force the browser to reload the page, and you 
+may have to clear browsing information in order to update the views.
