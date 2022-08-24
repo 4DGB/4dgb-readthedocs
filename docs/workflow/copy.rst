@@ -1,5 +1,5 @@
-Example: copying an existing project
-====================================
+Copying and sharing an existing project
+======================================
 
 Since a ``4dgbworkflow`` project directory is just a collection of files, you
 can use normal file commands from the shell to make a copy of an existing
