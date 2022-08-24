@@ -51,7 +51,7 @@ complexity of that data.
 .. code-block:: 
 
    $ 4dgbwqorkflow run 4DGB_Project
-   > Workflow version: v1.2.0
+   > Workflow version: v1.3.0
    > Browser version: v1.5.1
    [>]: Building project... (this may take a while)
      [! ENCLB571GEP.chr22.200kb.h5.hic]: Processing Hi-C file...
@@ -63,7 +63,7 @@ how to connect to the 4D Genome Browser server:
 .. code-block:: console
 
    $ 4dgbwqorkflow run 4DGB_Project
-   > Workflow version: v1.2.0
+   > Workflow version: v1.3.0
    > Browser version: v1.5.1
    [>]: Building project... (this may take a while)
      [! ENCLB571GEP.chr22.200kb.h5.hic]: Processing Hi-C file...
