@@ -23,14 +23,17 @@ the directory shows the files that have been created:
 
 .. code-block:: console
 
-   workingdir/
-        4DGB_Project/
-            ENCLB571GEP.chr22.200kb.h5.hic
-            ENCLB870JCZ.chr22.200kb.12.h5.hic
-            chr22.tracks.12.csv
-            chr22.tracks.csv
-            project.yaml
-
+    4DGB_Project/
+        ENCLB571GEP.chr22.200kb.00hr.hic
+        ENCLB571GEP.chr22.200kb.00hr.tracks.csv
+        ENCLB870JCZ.chr22.200kb.12hr.hic
+        ENCLB870JCZ.chr22.200kb.12hr.tracks.csv
+        chr22.gff
+        features.csv
+        project.full.yaml
+        project.min-with-tracks.yaml
+        project.min.yaml
+        project.yaml
 
 This template project can be used as an example of the tool working, and also 
 as a template for creating your own projects. To run the tool on the example 
@@ -84,11 +87,10 @@ directory, it will force the workflow to run again.
 
 .. code-block:: console
 
-   workingdir/
-        4DGB_Project/
-            .build/
-            ENCLB571GEP.chr22.200kb.h5.hic
-            ENCLB870JCZ.chr22.200kb.12.h5.hic
-            chr22.tracks.12.csv
-            chr22.tracks.csv
-            project.yaml
+    4DGB_Project/
+        .build/
+        ENCLB571GEP.chr22.200kb.00hr.hic
+        ENCLB571GEP.chr22.200kb.00hr.tracks.csv
+        ENCLB870JCZ.chr22.200kb.12hr.hic
+        ENCLB870JCZ.chr22.200kb.12hr.tracks.csv
+        ...
