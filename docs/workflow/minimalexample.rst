@@ -13,17 +13,17 @@ Big picture: to get started, we need just a few things:
   By default, the workflow uses a value of 200kb, so if that's the resolution
   you'd like to use, you can omit this value.
 
-To see this working, create a template project, and use the minimal ``project.yaml``
-file that's provided:
+To see this working, create a template project, and then replace the
+``project.yaml`` file with the minimal project file, ``project.min.yaml``:
 
 .. code-block::
 
    4dgbworkflow template --output minimal
    cp minimal/project.min.yaml minimal/project.yaml
 
-The minimal ``project.yaml`` contains the minimum information that the workflow
-needs to get started. Note that we don't need to define the **resolution**, 
-because we are fine with the default value of 200kb:
+The ``project.min.yaml`` file contains the minimum information that the
+workflow needs to get started. Note that we don't need to define the
+**resolution**, because we are fine with the default value of 200kb:
 
 .. code-block::
 
@@ -45,14 +45,15 @@ Run the tool, and wait for completion to look at your data:
 Progressively Adding Information
 --------------------------------
 
-After the simulation has run, it's useful to add more information, 
-such as tracks, annotations and other parameters. Adding this information
-and re-running the workflow will **not** cause it to re-run the simulation.
-Instead, it adds the information to the rest of the workflow, so that
-the new data can be viewed in the browser.
+After the simulation has run, it's useful to add more information, such as
+tracks, annotations and other parameters. Adding this information and
+re-running the workflow will **not** cause it to re-run the simulation.
+Instead, it adds the information to the rest of the workflow, so that the new
+data can be viewed in the browser.
 
-To see this in our example, copy the project.min-with-tracks.yaml file to
-the project.yaml file:
+To see this in our example, replace the ``project.yaml`` file with a minimal
+project file containing track data, ``project.min-with-tracks.yaml``, which 
+defines two tracks for the browser:
 
 .. code-block::
 
