@@ -131,7 +131,11 @@ Bookmarks section
 -----------------
 
 This defines data about bookmarks for the 4D Genome Browser UI. The bookmarks can
-be either **locations** or **features**, and are defined as in these examples:
+be either **locations** or **features**, and are defined as in these examples.
+
+- **locations** a list of pairs of values. The first value is the start of the
+  location, and the second value is the end of the location.
+- **features** a list of strings, each of which is the name of an annotation.
 
 .. code-block::
     bookmarks:
