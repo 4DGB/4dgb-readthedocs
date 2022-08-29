@@ -12,15 +12,27 @@ information about the workflow.
   the workflow. 
 - **tracks**: This section points the workflow to ``track`` data that 
   can be painted on the 3D structures that are created.
-- **bookmarks**: This section defines features and locations of interest
-  that can be quickly selected in the 4D Genome Browser
 - **annotations**: This section points to annotation files that can be used
   to select regions in the 4D Genome Browser. Either ``.gff`` or ``.csv``
   files can be used.
+- **bookmarks**: This section defines features and locations of interest
+  that can be quickly selected in the 4D Genome Browser
 
 The workflow expects the data files defined in the ``project.yaml`` file to
 exist, be well-formed, and contain data that can be cross-referenced per
 the expectations of the tools.
+
+Workflow section
+----------------
+
+The workflow section contains metadata about the workflow, most importantly
+the version string. This section is not required, and the workflow will work
+if this is not present.
+
+.. code-block::
+
+    workflow:
+        version: "1.3.0"
 
 Project section
 ---------------
@@ -113,3 +125,31 @@ This defines track data that can be painted on the final 3D structure.
     - **columns**: a list of values defining the files for the datasets
         - **name**: a string that is the name of a column in the source csv file.
         - **file (optional)**: the csv file to search for the name of this column.
+
+
+Bookmarks section
+-----------------
+
+This defines data about bookmarks for the 4D Genome Browser UI. The bookmarks can
+be either **locations** or **features**, and are defined as in these examples:
+
+.. code-block::
+    bookmarks:
+        locations:
+            - [start, end]
+            - [start, end]
+            ...
+        features:
+            - namestring
+            - "name string"
+
+Annotations section
+-------------------
+
+This defines data about annotations that are available for selection in the 4D Genome Browser UI.
+The user can define both ``gff`` and ``csv`` sources for annotations. See the section on the ``featuers.csv``
+file in :ref: `File formats`
+
+.. code-block::
+
+

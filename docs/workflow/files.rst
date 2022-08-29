@@ -33,7 +33,13 @@ Features file (.csv)
 -----------------
 
 A features file is a ``csv`` file that describes a feature in a DNA sequence.
-These can be included in a project so that a user can define portions of the sequence that can be easily selected with the 4D Genome Browser UI.
+These can be included in a project so that a user can define portions of the sequence that can be easily selected with the 4D Genome Browser UI. The data fields are meant to capture the data that can be extracted from a ``gff`` file. In particular, the **id**, **type**, and **name** fields are values that are parsed from the **attributes** value in a ``gff`` file.
+
+- **name**: a meaningful string. Equivalent to the **Name** ``gff`` field.
+- **start**: the start position of the feature.
+- **end**: the end position of the feature.
+- **id**: a unique identifier for the feature. Equivalent to the **ID** ``gff`` field.
+- **type**: the type of feature. Typically a feature type found in gff files, but any string can be used. Equivalent to the **biotype** ``gff`` field.
 
 .. code-block::
 
