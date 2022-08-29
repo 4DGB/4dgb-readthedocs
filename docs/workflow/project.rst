@@ -153,8 +153,8 @@ Annotations section
 
 This defines data about annotations that are available for selection in the 4D
 Genome Browser UI. The user can define both ``gff`` and ``csv`` sources for
-annotations. See the section on the ``features.csv`` file in the
-:ref: `section on file formats<files>`
+annotations. See the section on the ``features.csv`` file in the section on
+file formats.
 
 .. code-block::
 
