@@ -90,9 +90,9 @@ the first (left window) and second (right window) datasets in the list.
 
    datasets:
         - name: "some name"
-          data: "some file relative to the project directory"
+          data: file/relative/to/project/directory
         - name: "some name"
-          data: "some file relative to the project directory"
+          data: file/relative/to/project/directory
 
 - **datasets**: a list of values describing the two required datasets.
     - **name**: a descriptive name for the dataset. Appears as a title for
