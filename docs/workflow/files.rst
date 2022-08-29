@@ -29,3 +29,15 @@ a track named 'velocity':
    ...
    
 
+Features file (.csv)
+-----------------
+
+A features file is a ``csv`` file that describes a feature in a DNA sequence.
+These can be included in a project so that a user can define portions of the sequence that can be easily selected with the 4D Genome Browser UI.
+
+.. code-block::
+
+    name,start,end,id,type
+    some_name,200000,400000,firsthalf,feature
+    some_gene,600000,800000,some_gene,gene
+    ...
