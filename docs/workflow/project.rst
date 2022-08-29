@@ -138,6 +138,7 @@ be either **locations** or **features**, and are defined as in these examples.
 - **features** a list of strings, each of which is the name of an annotation.
 
 .. code-block::
+
     bookmarks:
         locations:
             - [start, end]
