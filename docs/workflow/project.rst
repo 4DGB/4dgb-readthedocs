@@ -32,7 +32,7 @@ if this is not present.
 .. code-block::
 
     workflow:
-        version: "1.3.0"
+        version: "1.5.1"
 
 Project section
 ---------------
