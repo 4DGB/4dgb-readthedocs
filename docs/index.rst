@@ -23,3 +23,9 @@
    workflow/project
    workflow/files
    workflow/copy
+
+.. toctree::
+   :maxdepth: 2
+   :Caption: Data Descriptions and Examples
+
+   scripts/data 
