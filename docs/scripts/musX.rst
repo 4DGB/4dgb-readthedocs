@@ -13,7 +13,7 @@ Generating a ``.hic`` file from  a ``.summary.txt.gz``
 
 Shown below is an example call to the summary to hic command, generating a hic file for the *cas*, activate chromosome X haplotype. 
 
-.. code-block:: console
+.. code-block::
     ## Change directory to tools
     cd ./hic-converter/tools
 
@@ -21,7 +21,8 @@ Shown below is an example call to the summary to hic command, generating a hic f
     ./summary.to.chrom.hic.py -i ../data/summary/GSM2667262_WT1.HiC.rep1.cas.chr13.summary.txt.gz -g mm9 -c chr13 -O ../data/hic/GSM2667262_WT1.HiC.rep1.cas.chr13.hic
 
 
-## Hi-C data on mouse embryonic stem cells from Marks *et al.* 
+Hi-C data embryonic stem cells
+-----------------------------
 
 The following code and instructions were modified from a [HicExplorer tutorial]( https://hicexplorer.readthedocs.io/en/latest/content/mES-HiC_analysis.html) on aligning Hi-C data from female mouse, embryonic stem cells. It was adapted to generate a Hi-C contact map for chromosome 13 in *.h5* format. Additionally only data from the first replicate of [Marks *et al.* 2015]( https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0698-x) is used in this analysis. See the [main page]( https://github.com/4DGB/hic-converter) of this repository for instruction on setting up a python computing environment and converting the *.h5* file to a *.hic* file.
 
