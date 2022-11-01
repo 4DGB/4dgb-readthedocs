@@ -1,4 +1,4 @@
-Getting Started (v1.5.1)
+Getting Started (v1.5.5)
 ===========================
 
 .. figure:: img/workflow_diagram.png
