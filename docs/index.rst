@@ -26,6 +26,9 @@
 
 .. toctree::
    :maxdepth: 2
-   :Caption: Data Descriptions and Examples
+   :Caption: More Examples
 
-   scripts/data 
+   scripts/hic-converter
+   scripts/musX
+   scripts/embryo
+   scripts/a549
