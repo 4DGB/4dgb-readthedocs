@@ -11,7 +11,8 @@ The *cas* and *mus* haplotype names correspond to the activate (Xa) and inactive
 Generating a ``.hic`` file from  a ``.summary.txt.gz``
 ------------------------------------------------------
 
-Shown below is an example call to the summary to hic command, generating a hic file for the *cas*, activate chromosome X haplotype. 
+Shown below is an example call to the ``summary.to.chrom.hic`` command, generating a hic file for the *cas*, activate chromosome X haplotype. 
+This script (and data) is stored on the associated, `hic-converter <https://github.com/4DGB/hic-converter>`_ git-repository.
 
 .. code-block::
 

@@ -1,14 +1,14 @@
 A549 Cells 
 ==========
 
-The data used as an example here and throughout the 4D-genome browser project was generated for the `ENCODE project <https://www.encodeproject.org>`_ by the Reddy lab at Duke University. 
+The data used as an example here and throughout the 4D-Genome Browser project were generated for the `ENCODE project <https://www.encodeproject.org>`_ by the Reddy lab at Duke University. 
 It includes paired-end, Hi-C sequencing libraries on A549 cells, a cancer lung cell line treated with 100 nM dexamethasone. 
 Specifically, the library of the first isogenic replicate, for the initial time point (`ENCLB571GEP <https://www.encodeproject.org/experiments/ENCSR662QKG/>`_) 
 with paired files `ENCFF039FYU <https://www.encodeproject.org/files/ENCFF039FYU/>`_ and `ENCFF479RSE <https://www.encodeproject.org/files/ENCFF479RSE/>`_ 
 and the first isogenic replicate, for the twelve hour time point -- treated with 100 nM dexamethasone -- (`ENCLB870JCZ <https://www.encodeproject.org/experiments/ENCSR499RVD/>`_) 
 with paired files `ENCFF668EDF <https://www.encodeproject.org/files/ENCFF668EDF/>`_ and `ENCFF398SQH <https://www.encodeproject.org/files/ENCFF398SQH/>`_ 
 were used to generate hic files via HiCExplorer. 
-As an example, we have included the instructions for the construciton of a ``.h5`` file of the twelve hour timepoint for chromosome 22, below.
+As an example, we have included the instructions for the construciton of an ``.h5`` file of the twelve hour timepoint for chromosome 22, below.
 
 Building a contact map for chromosome 22
 ----------------------------------------
@@ -51,16 +51,16 @@ Building a contact map for chromosome 22
         --restrictionSequence GATC --danglingSequence GATC --restrictionCutFile ./GRCh38/GRCh38_MboI_cut_sites.bed \
         --QCfolder ENCLB870JCZ.chr22.12hr --outFileName ./h5/ENCLB870JCZ.chr22.200kb.12hr.h5
 
-
 Converting the ``.h5`` contact map to ``.hic``
 ----------------------------------------------
 
-Currenlty the 4D-genome workflow is only compatibable with ``.hic`` files. 
-After generateing a ``.h5`` file, it will need to be converted. 
+Currenlty the 4D-Genome Workflow is only compatibable with ``.hic`` files. 
+After generateing a ``.h5`` file as shown above, it will need to be converted. 
 An example of this file conversion process is shown below. 
 The scripts required for this conversion are avaialbe `here <https://github.com/4DGB/hic-converter>`_.
 
 .. code-block::
+
     ## Activate hic-explorer environment
     conda activate hicexplorerenv
 

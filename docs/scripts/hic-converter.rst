@@ -2,13 +2,13 @@ Hi-C File Converter
 ===================
 
 Hi-C data can come in many formats including, for example, ``.hic``, ``.h5``, and ``.cool``. 
-We are buliding a library of code to convert these formats to a ``.hic`` file compatable with the 4D-genome browser. 
+We are buliding a library of code to convert these formats to a ``.hic`` file compatable with the 4D-Genome Browser. 
 The git repository, `hic-converter <https://github.com/4DGB/hic-converter>`_ is a collection of these tools and useful commands. 
-This repository also holds data used in preprocessing and for setup of Hi-C data for the 4D-Genome Browser (4DGB) Project.
+This repository also holds Hi-C `data <https://github.com/4DGB/hic-converter/tree/main/data>`_ used in preprocessing and for setup of the 4D-Genome Browser Project.
 In the following sections we highlight how to set up a python computing environment for running these scripts. 
 We also walk through some example useage of our conversion tools. 
 
-Installation and set up
+Installation and setup
 -----------------------
 
 Start by cloning the hic-converter git repository to a local directory. For example:
@@ -18,8 +18,8 @@ Start by cloning the hic-converter git repository to a local directory. For exam
     ## Clone the hic-converter git repo
     git clone git@github.com:4DGB/hic-converter.git
 
-    ## Make scripts within the *tools* directory executable
-    chmod +x ./hic-converter/tools/``*``.sh ./hic-converter/tools/``*``.py
+    ## Make scripts within the tools directory of the hic-converter repo executable
+    chmod +x ./hic-converter/tools/*.sh ./hic-converter/tools/*.py
 
 
 Generate a conda environment with an installation of `HiCExplorer <https://hicexplorer.readthedocs.io/en/latest/index.html>`_.
@@ -32,7 +32,7 @@ Other needed python libraries include:
 * gzip
 * subprocess
 
-Below is an example conda crate command for installing and setting up the needed python environment
+Below is an example ``conda create`` command for installing and setting up the needed python environment
 
 .. code-block::
 

@@ -5,7 +5,7 @@ Generating a ``.hic`` file.
 ---------------------------
 
 Below is an example of using `juicer tools <https://github.com/aidenlab/juicer/wiki/>`_ for Hi-C data preprocessing.
-The command assumes the user has generated an output data file from the juicer pipeline as an ``in.short`` file.
+The example commands below assume the user has generated an output data file from the juicer pipeline as an ``in.short`` file.
 The example below demonstrates how to generate data for a single chromosome (chromosome 22) with ``KR`` corrected hi-c contact counts.
 
 .. code-block::
