@@ -16,12 +16,10 @@ Start by cloning the hic-converter git repository to a local directory. For exam
     .. code-block::
     
     ## Clone the hic-converter git repo
-
     git clone git@github.com:4DGB/hic-converter.git
 
     ## Make scripts within the *tools* directory executable
-
-    chmod +x ./hic-converter/tools/*.sh ./hic-converter/tools/*.py
+    chmod +x ./hic-converter/tools/``*``.sh ./hic-converter/tools/``*``.py
     
 Generate a conda environment with an installation of `HiCExplorer <https://hicexplorer.readthedocs.io/en/latest/index.html>`_.
 Other needed python libraries include:

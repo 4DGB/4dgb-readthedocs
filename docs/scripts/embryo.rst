@@ -8,15 +8,12 @@ Below are the needed bits of code for constructing a ``.h5`` contact map of chro
 .. code-block::
 
     ## Set the working directory
-    
     cd ./hic-converter/data
 
     ## Activate the python computing environment.
-
     conda activate hicexplorerenv
 
     ## Make directories for analysis.
-
     mkdir -p genome_mm10 fastq bam bwa
 
     ## Gather the mm10 reference, use wget and tar to unpack the data.
