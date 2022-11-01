@@ -2,11 +2,11 @@ Hi-C File Converter
 ===================
 
 Hi-C data can come in many formats including, for example, ``.hic``, ``.h5``, and ``.cool``. 
-We are buliding a library of code to convert these formats to a ``.hic`` file compatable with the 4D-Genome Browser. 
+We are building a library of code to convert these formats to a ``.hic`` file compatible with the 4D-Genome Browser. 
 The git repository, `hic-converter <https://github.com/4DGB/hic-converter>`_ is a collection of these tools and useful commands. 
 This repository also holds Hi-C `data <https://github.com/4DGB/hic-converter/tree/main/data>`_ used in preprocessing and for setup of the 4D-Genome Browser Project.
 In the following sections we highlight how to set up a python computing environment for running these scripts. 
-We also walk through some example useage of our conversion tools. 
+We also walk through some example usage of our conversion tools. 
 
 Installation and setup
 -----------------------
@@ -42,7 +42,7 @@ Dependencies
 ------------
 
 The two largest dependencies for these conversion scripts are ``python`` and ``juicer`` tools:
-Scripts here were developed using juicer version 1.22.01. The jar file of these tools are also stored `here <https://github.com/4DGB/hic-converter/tree/main/tools>`_.
+Scripts here were developed using juicer version 1.22.01. The jar file of these tools is also stored `here <https://github.com/4DGB/hic-converter/tree/main/tools>`_.
 
 * `Juicer tools jar file <https://github.com/aidenlab/juicer/wiki/Download>`_
 * `Anaconda <https://www.anaconda.com/products/individual>`_
@@ -60,7 +60,7 @@ Converting contact matrix from HiCExplorer as an ``.h5`` file to a ``.hic`` cont
     ## Change directory to tools
     cd ./hic-converter/tools
 
-    ## Convert the .h5 file to .hic formated file for Mus musculus chromosome 13
+    ## Convert the .h5 file to .hic formatted file for Mus musculus chromosome 13
     ./h5.to.hic.sh -m ../data/h5/SRR1956527_chr13.h5 -g ../data/sizes/mm10.chr13.size.bed -o ../data/hic/SRR1956527_chr13.200kb.hic
 
 Generating a ``.hic`` file from ``.summary.txt.gz`` file
@@ -83,5 +83,5 @@ Convert juicer merged_nodups (long format) file for chromosome 22 to .hic
     ## Change directory to tools
     cd ./hic-converter/tools
 
-    ## Envoke our long to chrom hic function
+    ## call our “long to chrom” hic function
     ./long.to.chrom.hic.py -i ../data/long/merged_nodups.chr22.subsampled.txt.gz -g ../data/sizes/GRCh38.chr22.size.bed -c chr22 -O ../data/hic/chr22.10kb.hic -R 10000
