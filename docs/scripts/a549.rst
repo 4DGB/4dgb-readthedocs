@@ -1,7 +1,7 @@
-A549 Cells From the ENCODE Project
-==================================
+A549 Cells 
+==========
 
-The data used as an example here and throughout the 4D-genome browser project was generated for the ENCODE project by the Reddy lab at Duke University. 
+The data used as an example here and throughout the 4D-genome browser project was generated for the `ENCODE project <https://www.encodeproject.org>`_ by the Reddy lab at Duke University. 
 It includes paired-end, Hi-C sequencing libraries on A549 cells, a cancer lung cell line treated with 100 nM dexamethasone. 
 Specifically, the library of the first isogenic replicate, for the initial time point (`ENCLB571GEP <https://www.encodeproject.org/experiments/ENCSR662QKG/>`_) 
 with paired files `ENCFF039FYU <https://www.encodeproject.org/files/ENCFF039FYU/>`_ and `ENCFF479RSE <https://www.encodeproject.org/files/ENCFF479RSE/>`_ 
