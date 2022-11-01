@@ -26,7 +26,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :Caption: More Examples
+   :Caption: File Conversion and Preprocessing
 
    scripts/hic-converter
    scripts/musX
