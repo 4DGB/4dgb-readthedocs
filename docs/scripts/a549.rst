@@ -10,8 +10,10 @@ with paired files `ENCFF668EDF <https://www.encodeproject.org/files/ENCFF668EDF/
 were used to generate hic files via HiCExplorer. 
 As an example, we have included the instructions for the construciton of an ``.h5`` file of the twelve hour timepoint for chromosome 22, below.
 
-Building a contact map for chromosome 22
-----------------------------------------
+
+
+File gathering and preprocessing
+--------------------------------
 
 .. code-block::
 
@@ -34,11 +36,26 @@ Building a contact map for chromosome 22
     ## Unzip the genome.
     gunzip ./GRCh38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz
 
-    ## Find the MobI restriction sites (GATC) in the GRCh38, human reference genome.
-    hicFindRestSite --fasta ./GRCh38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta -o ./GRCh38/GRCh38_MobI_cut_sites.bed --searchPattern GATC
+Restrction site marking and indexing
+------------------------------------
+
+Prior to analysis we need to index the reference genome we downloaded above and then search for MobI restrction cut sites. 
+For this we use ``bwa index`` from the ``bwa`` suite of tools and ``hicFindRestSite`` from HiCExplorer. 
+
+.. code-block::
 
     ## Index the human genome (this can take awhile but we only need to do it once)!
     bwa index -p bwa/GRCh38_index ./GRCh38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta 
+
+    ## Find the MobI restriction sites (GATC) in the GRCh38, human reference genome.
+    hicFindRestSite --fasta ./GRCh38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta -o ./GRCh38/GRCh38_MobI_cut_sites.bed --searchPattern GATC
+
+Building a contact map for chromosome 22
+----------------------------------------
+
+Below are the example ``bwa mem`` and ``hicBuildMatrix`` commands used to align squenced reads and build a Hi-C contact map in ``.h5`` format. 
+
+.. code-block::
 
     ## Align data to the human reference genome. 
     bwa mem -A 1 -B 4 -E 50 -L 0 -t 14 bwa/GRCh38_index ./fastq/ENCFF668EDF_R1_001.fastq.gz | samtools view -SHb - > ./bam/ENCFF668EDF_R1_001.bam

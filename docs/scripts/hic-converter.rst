@@ -50,7 +50,7 @@ Scripts here were developed using juicer version 1.22.01. The jar file of these 
 Example usage
 -------------
 
-Converting contact matrix from HiCExplorer as an ``.h5`` file to a contact matrix with .hic
+Converting contact matrix from HiCExplorer as an ``.h5`` file to a ``.hic`` contact matrix
     
 .. code-block::
 
