@@ -24,7 +24,7 @@ immediately run the **4DGB Server**, as all the work has already been done:
 .. code-block:: console
 
    $ 4dgbwqorkflow run myproject
-   > Workflow version: v1.5.5
+   > Workflow version: v1.5.6
    > Browser version: v1.5.3
    [>]: Building project... (this may take a while)
 
