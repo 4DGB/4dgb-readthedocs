@@ -32,3 +32,5 @@
    scripts/musX
    scripts/embryo
    scripts/a549
+   scripts/useful
+   scripts/workcited
