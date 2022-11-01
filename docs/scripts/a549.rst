@@ -58,7 +58,7 @@ Converting the ``.h5`` contact map to ``.hic``
 Currenlty the 4D-genome workflow is only compatibable with ``.hic`` files. 
 After generateing a ``.h5`` file, it will need to be converted. 
 An example of this file conversion process is shown below. 
-The scripts required for this conversion are avaialbe `here < >`_.
+The scripts required for this conversion are avaialbe `here <https://github.com/4DGB/hic-converter>`_.
 
 .. code-block::
     ## Activate hic-explorer environment
