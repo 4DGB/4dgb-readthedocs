@@ -13,14 +13,15 @@ Installation and set up
 
 Start by cloning the hic-converter git repository to a local directory. For example:
 
-    .. code-block::
+.. code-block::
     
     ## Clone the hic-converter git repo
     git clone git@github.com:4DGB/hic-converter.git
 
     ## Make scripts within the *tools* directory executable
     chmod +x ./hic-converter/tools/``*``.sh ./hic-converter/tools/``*``.py
-    
+
+
 Generate a conda environment with an installation of `HiCExplorer <https://hicexplorer.readthedocs.io/en/latest/index.html>`_.
 Other needed python libraries include:
 
@@ -33,8 +34,8 @@ Other needed python libraries include:
 
 Below is an example conda crate command for installing and setting up the needed python environment
 
-    .. code-block::
-    
+.. code-block::
+
     conda create -n hicexplorerenv hicexplorer -c bioconda -c conda-forge
 
 Dependencies
@@ -54,15 +55,12 @@ Converting contact matrix from HiCExplorer as an ``.h5`` file to a contact matri
 .. code-block::
 
     ## Activate hic-explorer environment
-
     conda activate hicexplorerenv
 
     ## Change directory to tools
-
     cd ./hic-converter/tools
 
     ## Convert the .h5 file to .hic formated file for Mus musculus chromosome 13
-
     ./h5.to.hic.sh -m ../data/h5/SRR1956527_chr13.h5 -g ../data/sizes/mm10.chr13.size.bed -o ../data/hic/SRR1956527_chr13.200kb.hic
 
 Generating a ``.hic`` file from ``.summary.txt.gz`` file
@@ -70,11 +68,9 @@ Generating a ``.hic`` file from ``.summary.txt.gz`` file
 .. code-block::
 
     ## Change directory to tools
-
     cd ./hic-converter/tools
 
     ## Convert a summary.txt.gz file to an .hic file for a single chromosome
-
     ./summary.to.chrom.hic.py -i ../data/summary/GSM2667262_WT1.HiC.rep1.mus.chr13.summary.txt.gz -g mm9 -c chr13 -O ../data/hic/GSM2667262_WT1.HiC.rep1.mus.chr13.200kb.hic
 
 Convert juicer merged_nodups (long format) file for chromosome 22 to .hic
@@ -82,13 +78,10 @@ Convert juicer merged_nodups (long format) file for chromosome 22 to .hic
 .. code-block::
 
     ## Activate hic-explorer environment
-
     conda activate hicexplorerenv
 
     ## Change directory to tools
-
     cd ./hic-converter/tools
 
     ## Envoke our long to chrom hic function
-
     ./long.to.chrom.hic.py -i ../data/long/merged_nodups.chr22.subsampled.txt.gz -g ../data/sizes/GRCh38.chr22.size.bed -c chr22 -O ../data/hic/chr22.10kb.hic -R 10000
