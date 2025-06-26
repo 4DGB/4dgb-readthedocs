@@ -32,7 +32,7 @@ File gathering and preprocessing
     gunzip ./GRCh38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz
 
 Restriction site marking and indexing
-------------------------------------
+-------------------------------------
 
 Prior to analysis we need to index the reference genome we downloaded above and then search for MobI restriction cut sites. 
 For this we use ``bwa index`` from the ``bwa`` suite of tools and ``hicFindRestSite`` from HiCExplorer. 

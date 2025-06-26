@@ -37,7 +37,7 @@ Finally, ``bwa`` is used to index the reference and later align the sequenced re
     bwa index -p bwa/chr13_index genome_mm10/chr13.fa
 
 Restriction sites
-----------------
+-----------------
 
 We utilize the set of tools from HiCExplorer to construct an ``.h5`` file. 
 To begin, we need to find the restriction cut sites of ``SauIII``. 
