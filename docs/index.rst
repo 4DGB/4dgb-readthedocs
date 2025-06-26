@@ -23,6 +23,7 @@
    workflow/project
    workflow/files
    workflow/copy
+   workflow/windows
 
 .. toctree::
    :maxdepth: 2
