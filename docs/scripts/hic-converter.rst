@@ -54,7 +54,7 @@ Converting contact matrix from HiCExplorer as an ``.h5`` file to a ``.hic`` cont
     
 .. code-block::
 
-    ## Make a project direcotry (no needed) and cd into it
+    ## Make a project direcotry (not needed) and cd into it
     mkdir myproject
     cd myproject
 
