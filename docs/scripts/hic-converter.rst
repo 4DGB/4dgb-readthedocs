@@ -54,6 +54,16 @@ Converting contact matrix from HiCExplorer as an ``.h5`` file to a ``.hic`` cont
     
 .. code-block::
 
+    ## Make a project direcotry (no needed) and cd into it
+    mkdir myproject
+    cd myproject
+
+    ## Clone the hic-converter git repo
+    git clone git@github.com:4DGB/hic-converter.git
+
+    ## Make scripts within the tools directory of the hic-converter repo executable
+    chmod +x ./hic-converter/tools/*.sh ./hic-converter/tools/*.py
+
     ## Activate hic-explorer environment
     conda activate hicexplorerenv
 
