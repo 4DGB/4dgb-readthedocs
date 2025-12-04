@@ -97,8 +97,11 @@ Convert juicer merged_nodups (long format) file for chromosome 22 to .hic
     ## call our “long to chrom” hic function
     ./long.to.chrom.hic.py -i ../data/long/merged_nodups.chr22.subsampled.txt.gz -g ../data/sizes/GRCh38.chr22.size.bed -c chr22 -O ../data/hic/chr22.10kb.hic -R 10000
 
-A Note on size file:
 
-The file 'GRCH37.chr22.size.bed' is a simple, two-column, tab-sperated text file, with no header/column names. 
-It contains the sequence nems of the chromosome begin converted (i.e. chr22) and the length in basepairs (bp) of that chromosome. 
-These sizes for human chromosomes and for chromosomes of other species can be found on the UCSC Genome Browser or ENCODE project websites. 
+A Note on size file
+-------------------
+
+The file 'GRCH37.chr22.size.bed' is a simple, two-column, tab-delimited text file, with no header/column names. 
+It contains the sequence name of the chromosome targeted for conversion (i.e. chr22) and the length in base pairs (bp) of that chromosome (for example 50,818,468). 
+These sizes for human chromosomes and for chromosomes of other species can be found on the UCSC Genome Browser or ENCODE project websites.
+
