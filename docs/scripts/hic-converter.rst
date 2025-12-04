@@ -60,6 +60,7 @@ Converting contact matrix from HiCExplorer as an ``.h5`` file to a ``.hic`` cont
 
     ## Clone the hic-converter git repo
     git clone git@github.com:4DGB/hic-converter.git
+    ## This will generate a folder named "hic-converter" 
 
     ## Make scripts within the tools directory of the hic-converter repo executable
     chmod +x ./hic-converter/tools/*.sh ./hic-converter/tools/*.py
