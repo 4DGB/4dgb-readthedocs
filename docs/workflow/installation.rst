@@ -1,4 +1,4 @@
-Installing the 4dgbworkflow tool
+Installing the 4DGBWorkflow tool
 ================================
 
 The workflow tool is a python script, and is installed using pip:
@@ -14,7 +14,7 @@ tool shows options and subcommands:
 
 .. code-block:: console
 
-    $ 4dgbworkflow --help
+    $ 4DGBWorkflow --help
     usage: 4DGBWorkflow [-h] [-n] [--docker PATH] [--build-container CONTAINER]
                         [--view-container CONTAINER] [-t TAG] [--rootless]
                         {build,view,run,update,template,version} ...
@@ -52,9 +52,9 @@ something like this in the shell:
 
 .. code-block:: console
 
-    $ 4dgbworkflow run 4DGB_Project
-    Unable to find image '4dgb/4dgbworkflow-build:latest' locally
-    latest: Pulling from 4dgb/4dgbworkflow-build
+    $ 4DGBWorkflow run 4DGB_Project
+    Unable to find image '4dgb/4DGBWorkflow-build:latest' locally
+    latest: Pulling from 4dgb/4DGBWorkflow-build
     e756f3fdd6a3: Download complete
     bf168a674899: Download complete
     e604223835cc: Download complete
