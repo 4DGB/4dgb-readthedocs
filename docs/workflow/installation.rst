@@ -8,7 +8,7 @@ The workflow tool is a python script, and is installed using pip:
    $ pip install 4dgb-workflow
 
 
-This will install a python module, and the ``4dgbworkflow`` script. This is the 
+This will install a python module, and the ``4DGBWorkflow`` script. This is the 
 command that you will use when invoking the workflow in a shell. The help for the 
 tool shows options and subcommands:
 
